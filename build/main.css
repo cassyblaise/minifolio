@@ -1,0 +1,408 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #000;
+    color: white;
+    font-family: 'oxygen', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.home img {
+    width: 100%;
+    -webkit-filter: grayscale(100%) contrast(100%);
+    filter: grayscale(100%) contrast(200%) brightness(60%);
+}
+
+.portfolio img {
+    filter: grayscale(100%);
+}
+
+aside {
+    position: fixed;
+    background: #222;
+    top: 0px;
+    left: 0px;
+    width: 120px;
+    height: 100%;
+    overflow: none;
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+}
+
+aside img {
+    filter: grayscale(100%) contrast(50%) brightness(100%);
+    margin-bottom: -3px;
+}
+
+.material-icons .md-36 {
+    font-size: 36px;
+}
+
+
+aside a {
+    display: block;
+    padding: 15px 0;
+    color: white;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    transition: all 0.35s;
+    text-transform: uppercase;
+}
+
+aside p {
+    margin: 0;
+    padding: 0;
+}
+
+aside a:hover {
+    background: #000;
+}
+
+aside nav a:nth-child(2) {
+    background: #000;
+}
+
+aside nav a:nth-child(2):hover {
+    background: #b2b2b2;
+    color: #222;
+}
+
+#welcome-section {
+    max-width: 980px;
+    background: #000;
+    margin-left: 20%;
+    padding: 12px 50px 12px 50px;
+}
+
+header {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: 4px;
+}
+
+header h6 {
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 4px;
+    color: #b2b2b2;
+}
+
+.txt-type > .txt{
+    border-right: 0.3rem solid #777;
+}
+.main-content {
+    position: absolute;
+    margin-left: 140px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.about,
+.portfolio,
+.contact {
+    line-height: 1.5em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.about h2,
+.portfolio h2,
+.contact h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin: 100px 0 0 0;
+    letter-spacing: 4px;
+}
+
+.about p {
+    color: #b2b2b2;
+}
+
+.about span {
+    font-weight: 600;
+    color: white;
+}
+
+.about h3 {
+    font-weight: 300;
+    margin: 50px 0;
+}
+
+.container {
+    width: 100%;
+    background-color: #b2b2b2;
+}
+
+.skills {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 30px;
+    color: white;
+    background-color: #424242;
+}
+
+.html {
+    width: 95%;
+}
+
+.css {
+    width: 80%;
+}
+
+.bootstrap {
+    width: 75%;
+}
+
+.JS {
+    width: 70%;
+}
+
+.react {
+    width: 70%;
+}
+
+.gatsby {
+    width: 75%;
+}
+
+.watson_chatson{
+    width: 90%;
+}
+
+.wordpress_developer{
+    width: 95%;
+}
+
+.portfolio h3 {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.portfolio p {
+    font-size: 0.879em;
+}
+
+.row-halves {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    -webkit-flex-pack: justify;
+}
+
+.row-halves .col {
+    width: 49%;
+}
+
+.col {
+    border: 1px solid #222;
+    background: #222;
+    color: #b2b2b2;
+    padding: 10px;
+}
+
+.col p {
+    background: #222;
+    color: #b2b2b2;
+}
+
+/*
+below are section contact and social media details
+
+.contact{
+  margin-top: 20px;
+  margin-bottom: 100px;
+  background: transparent;
+  padding: 20px  0;
+}
+*/
+
+.social-media {
+    background: rgb(153, 152, 152);
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-5%);
+    padding-bottom: 90px;
+}
+
+.social-media .contact-details {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-clip: content-box;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 20px;
+    font-size: 70px;
+    transition: .5s;
+    color: #313131;
+
+}
+
+.social-media span.fa-stack {
+    display: inline-block;
+    height: 6em;
+    width: 6.5em;
+    vertical-align: middle;
+    line-height: 6em;
+    position: relative;
+}
+
+
+
+.social-media .contact-details span {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.social-media .contact-details:hover {
+    padding: 20px;
+    color: rgb(17, 16, 16);
+    margin-left: -10px;
+    transform: translateX(20px) rotate(360deg);
+}
+
+/*
+.social-media .contact-details{
+  background-color: #222;
+  color: #b2b2b2;
+}
+*/
+
+footer {
+    border-top: 1px solid #222;
+}
+
+/*
+.top-bar{
+  padding: 20px 0;
+  text-align: center;
+}
+
+.top-bar a{
+  margin: 10px;
+  font-size: 2em;
+  color: #b2b2b2;
+  transition: all 0.35s;
+  display: inline-block;
+}
+
+.top-bar a:hover {
+   transform: scale(1.1);
+   color: #009688;
+}
+*/
+
+.bottom-bar {
+    background: #000;
+    font-size: 0.75em;
+    text-align: center;
+
+}
+
+/* @media Query */
+
+@media(max-width: 789px) {
+    .row-halves {
+        display: block;
+    }
+
+    .row-halves .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .aside {
+        display: block;
+    }
+
+    section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 12px 25px;
+    }
+
+    header {
+        margin-top: 80px;
+
+    }
+
+    header h1 {
+        font-size: 3em;
+        line-height: 1.3em;
+    }
+
+    header h4 {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: rgb(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+
+    .mobile-nav a {
+        width: 100%;
+        color: #b2b2b2;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 10px 10px;
+        transition: all 0.35s;
+    }
+
+    .mobile-nav a:hover {
+        background: #b2b2b2;
+        color: #222;
+    }
+}
+
+@media(min-width:600px) {
+    .mobile-nav {
+        display: none;
+    }
+}
